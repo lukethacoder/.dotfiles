@@ -1,0 +1,41 @@
+{
+  "name": "base-package-json",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "lukethacoder",
+    "email": "dev@lukesecomb.digital",
+    "url": "https://lukesecomb.digital"
+  },
+  "license": "SEE  LICENSE",
+  "bugs": {
+    "url": "https://github.com/lukethacoder/*/issues"
+  },
+  "homepage": "https://github.com/lukethacoder/",
+  "main": ".webpack/main",
+  "scripts": {
+    "dev": "yarn dev",
+    "build": "yarn build",
+    "serve": "yarn serve",
+    "lint": "tslint '{src,test,mocks}/**/*.{ts,tsx}' --project ./tsconfig.json",
+    "precommit": "lint-staged",
+    "test": "jest '(\\/test\\/).*'"
+  },
+  "lint-staged": {
+    "{src,test,mocks}/**/*.{js,ts,tsx,json,css,scss,md}": [
+      "prettier --config ./.prettierrc --write",
+      "git add"
+    ],
+    "{src,test,mocks}/**/*.{js,ts,tsx}": [
+      "tslint --project ./tsconfig.json --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.1.1"
+  },
+  "dependencies": {}
+}
