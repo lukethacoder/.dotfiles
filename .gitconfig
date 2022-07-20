@@ -3,8 +3,7 @@
   email = EMAIL_HERE
 	signingkey = SIGNING_KEY_HERE
 [core]
-	editor = \"C:\\Users\\USER_NAME\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
-  autocrlf = true
+	editor = code
 [color]
   ui = auto
 [color "branch"]
