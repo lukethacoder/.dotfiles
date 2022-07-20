@@ -33,5 +33,5 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = C:\\Program Files\\Git\\usr\\bin\\gpg.exe
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
   
