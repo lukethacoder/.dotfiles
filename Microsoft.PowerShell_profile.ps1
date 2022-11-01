@@ -58,4 +58,4 @@ function pgrep($name) {
   ps $name
 }
 
-oh-my-posh init pwsh | Invoke-Expression
+oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/lukethacoder/.../master/oh-my-posh.omp.json' | Invoke-Expression
