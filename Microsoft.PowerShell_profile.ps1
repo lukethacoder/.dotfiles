@@ -1,3 +1,9 @@
+# Chocolatey profile
+# $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+# if (Test-Path($ChocolateyProfile)) {
+#   Import-Module "$ChocolateyProfile"
+# }
+
 # Does the the rough equivalent of dir /s /b. For example, dirs *.png is dir /s /b *.png
 function dirs {
   if ($args.Count -gt 0) {
@@ -58,4 +64,8 @@ function pgrep($name) {
   ps $name
 }
 
-oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/lukethacoder/.../master/oh-my-posh.omp.json' | Invoke-Expression
+# Alias PNPM to pn
+Set-Alias -Name pn -Value pnpm
+
+Invoke-Expression Clear-Host
+Invoke-Expression (&starship init powershell)
