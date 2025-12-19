@@ -1,0 +1,30 @@
+{
+  "tab_size": 2,
+  "buffer_font_family": "FiraCode NF",
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "show": "auto",
+  },
+  "file_types": {},
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16.0,
+  "buffer_font_size": 14.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Luke Dark Pro",
+  },
+  "formatter": "prettier",
+  "colorize_brackets": true,
+  "lsp": {
+    "wakatime": {
+      "initialization_options": {
+        "api-key": "waka_KEY_GOES_HERE",
+      },
+    },
+  },
+}
