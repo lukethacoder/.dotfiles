@@ -1,0 +1,9 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-f1": ["task::Spawn", { "task_name": "SF: Open" }],
+      "ctrl-f2": ["task::Spawn", { "task_name": "SF: Deploy Current File" }],
+    },
+  },
+]
