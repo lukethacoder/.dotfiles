@@ -1,6 +1,6 @@
 #! /bin/bash
 
-DOTFILES()
+DOTFILES(.zshrc)
 
 for dotfile in $(echo ${DOTFILES[*]});
 do
